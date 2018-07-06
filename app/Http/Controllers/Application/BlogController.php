@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Application;
 
 use App\Base\Controllers\ApplicationController;
 
-class HomeController extends ApplicationController
+class BlogController extends ApplicationController
 {
     /**
      * Show the application homepage to the user.

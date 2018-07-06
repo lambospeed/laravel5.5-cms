@@ -1,34 +1,42 @@
-<nav class="navbar navbar-default navbar-custom">
-    <div class="container">
-        <div class="inside">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{  route('root') }}">{{ session('current_lang')->site_title }}</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                @if(count(session('current_lang')->pages))
-                    <ul class="nav navbar-nav">
-                        @foreach(session('current_lang')->pages->toHierarchy() as $node)
-                            @include('partials.application.node')
-                        @endforeach
-                    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="am-logo"></div>
+    <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Get in touch</a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+            <div class="am-social-container">
+                @if(!empty(config('settings')->facebook))
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 @endif
-                <ul class="nav navbar-nav navbar-right">
-                    @if(!empty(config('settings')->facebook))
-                        <li><a target="_blank" href="{{ config('settings')->facebook }}"><i class="fa fa-facebook"></i></a></li>
-                    @endif
-                    @if(!empty(config('settings')->twitter))
-                        <li><a target="_blank" href="{{ config('settings')->twitter }}"><i class="fa fa-twitter"></i></a></li>
-                    @endif
-                    @if(!empty(config('settings')->email))
-                        <li><a target="_blank" href="mailto:{{ config('settings')->email }}"><i class="fa fa-envelope"></i></a></li>
-                    @endif
-                </ul>
+                @if(!empty(config('settings')->facebook))
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                @endif
+                @if(!empty(config('settings')->facebook))
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                @endif
+            </div>
+            <div>
+                <a href="#" class="am-white-button">Become a beta tester</a>
             </div>
         </div>
     </div>

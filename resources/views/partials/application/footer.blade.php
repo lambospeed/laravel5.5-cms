@@ -1,4 +1,48 @@
-@include('partials.common.languages', ['languages' => config('languages'), 'route' => 'app.language.change' ])
+<div class="container-fluid am-partners">
+<div class="row">
+<div class="col-md-12"><h3>OUR PARTNERS</h3></div>
+<div class="col-md-12 am-partners-container">
+<a href="#" class="am-partners-item"><img src="img/aetna-logo.png" alt=""></a>
+<a href="#" class="am-partners-item"><img src="img/nvidia-logo.png" alt=""></a>
+<a href="#" class="am-partners-item"><img src="img/biagio-logo.png" alt=""></a>
+</div>
+</div>
+</div>
+
+<div class="container-fluid am-footer">
+<img class="am-footer-shape" src="img/footer-shape.png" alt="">
+<img class="am-footer-logo" src="img/white-logo.svg" alt="">
+<div class="row">
+<div class="col-md-12">
+  <h3>stay informed</h3>
+  <p class="am-footer-subtitle">Join our mailing list</p>
+  <div class="d-flex w-100 align-items-center q-posr">
+    <form id="am-subscribe-form" action="#" method="GET">
+    <input class="inputMaterial" type="email" name="EMAIL" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Your email here</label>
+    <button class="am-btn-footer ml-auto" id="buttonSubscribe" type="submit">signup <i class="far fa-arrow-alt-circle-right"></i></button>
+    </form>
+  <div class="am-form-thankyou">
+      <h3>Thank you!</h3>
+      <span>Your subscription has been activated.</span>
+  </div>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12 am-footer-social">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-facebook-square"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+</div>
+
+
 
 <script>
     @if(!empty(Config::get('settings')->analytics_id))

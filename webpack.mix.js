@@ -27,15 +27,19 @@ var mix       = require('laravel-mix'),
     nodeDir   + 'jquery/dist/jquery.min.js',
     nodeDir   + 'webfontloader/webfontloader.js',
     nodeDir   + 'jquery-floating-social-share/dist/jquery.floating-social-share.min.js',
-    assetsDir + 'js/application.js'
+    assetsDir + 'dist/js/bootstrap.min.js',
+    assetsDir + 'libs/bootstrap/js/bootstrapValidator.min.js',
+    assetsDir + 'libs/main/scripts.js',
   ];
 
 mix
   .copyDirectory(nodeDir + 'tinymce', publicDir + 'packages/tinymce')
+  .copyDirectory(assetsDir + 'img', publicDir + 'img')
   .less(assetsDir + 'less/admin.less', distDir + 'css/admin.css')
   .less(assetsDir + 'less/application.less', distDir + 'css/application.css')
-  .scripts(adminJs, distDir + 'js/admin.js')
-  .scripts(applicationJs, distDir +'js/application.js');
+  .sass(assetsDir + 'sass/styles.scss', distDir + 'css/styles.css')
+  .babel(adminJs, distDir + 'js/admin.js')
+  .babel(applicationJs, distDir +'js/application.js');
 
 if (mix.inProduction()) {
   mix.version();
