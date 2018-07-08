@@ -12,7 +12,7 @@
     <meta name="twitter:title" content="@yield('title')">
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
-    <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/css/styles.css')) }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/blog/css/styles.css')) }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +44,7 @@
     @yield('content')
 </div>
 @include('partials.application.footer')
-<script src="{{ asset(mix('dist/js/application.js')) }}" type="text/javascript"></script>
+<script src="{{ asset(mix('dist/blog/js/script.js')) }}" type="text/javascript"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
 </body>

@@ -16,7 +16,8 @@ return [
             'category_id' => 'Category',
             'content'     => 'Content',
             'description' => 'Description',
-            'title'       => 'Article Title'
+            'title'       => 'Article Title',
+            'picture'     => 'Image'
         ],
         'index'  => 'Articles',
         'show'   => 'Show article'

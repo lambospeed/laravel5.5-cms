@@ -17,7 +17,6 @@
                         <li class="user-header">
                             <img class="img-circle" src="{{ $currentUser->picture }}" alt="{{ $currentUser->name }}" />
                             <p>{{ $currentUser->name  }}</p>
-                            @include('partials.common.languages', ['languages' => config('languages'), 'route' => 'admin.language.change' ])
                         </li>
                         <li class="user-footer">
                             <div class="pull-left">

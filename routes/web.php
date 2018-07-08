@@ -13,6 +13,9 @@
 
 Route::get('/', ['as' => 'root', 'uses' => 'HomeController@index']);
 Route::get('/blog', ['as' => 'blog', 'uses' => 'BlogController@index']);
+Route::get('/product', ['as' => 'product', 'uses' => 'ProductController@index']);
+Route::get('/company', ['as' => 'company', 'uses' => 'CompanyController@index']);
+Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index']);
 Route::get('article/{articleSlug}', ['as' => 'article', 'uses' => 'ArticleController@index']);
 Route::get('page/{pageSlug}', ['as' => 'page', 'uses' => 'PageController@index']);
 Route::get('category/{categorySlug}', ['as' => 'category', 'uses' => 'CategoryController@index']);

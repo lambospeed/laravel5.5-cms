@@ -1,8 +1,4 @@
-@extends('layouts.application')
+@extends('layouts.home')
 
 @section('title'){{ getTitle() }}@endsection
 @section('description'){{ getDescription() }}@endsection
-
-@section('content')
-    @include('partials.application.articles')
-@endsection

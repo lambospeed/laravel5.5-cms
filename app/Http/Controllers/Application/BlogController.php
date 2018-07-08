@@ -14,6 +14,6 @@ class BlogController extends ApplicationController
     public function index()
     {
         $articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(6);
-        return view('application.home.index', compact('articles'));
+        return view('application.blog.index', compact('articles'));
     }
 }

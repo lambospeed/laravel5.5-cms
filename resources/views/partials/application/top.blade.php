@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="am-logo"></div>
+    <a class="am-logo" href="{{  route('root') }}"></a>
     <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -7,20 +7,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+            <li class="{{ Request::segment(1) === null ? 'nav-item active' : 'nav-item' }}">
+                <a class="nav-link" href="{{  route('root') }}">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+            <li class="{{ Request::segment(1) === 'product' ? 'nav-item active' : 'nav-item' }}">
+                <a class="nav-link" href="{{  route('product') }}">Product</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Company</a>
+            <li class="{{ Request::segment(1) === 'company' ? 'nav-item active' : 'nav-item' }}">
+                <a class="nav-link" href="{{  route('company') }}">Company</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+            <li class="{{ Request::segment(1) === 'blog' ? 'nav-item active' : 'nav-item' }}">
+                <a class="nav-link" href="{{  route('blog') }}">Blog</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Get in touch</a>
+            <li class="{{ Request::segment(1) === 'contact' ? 'nav-item active' : 'nav-item' }}">
+                <a class="nav-link" href="{{  route('contact') }}">Get in touch</a>
             </li>
         </ul>
         <div class="form-inline my-2 my-lg-0">

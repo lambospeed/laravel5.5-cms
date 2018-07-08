@@ -10,6 +10,13 @@ use App\Http\Requests\Admin\ArticleRequest;
 class ArticleController extends AdminController
 {
     /**
+     * Image column of the model
+     *
+     * @var string
+     */
+    private $imageColumn = 'picture';
+
+    /**
      * Display a listing of the articles.
      *
      * @param ArticleDataTable $dataTable
@@ -28,7 +35,7 @@ class ArticleController extends AdminController
      */
     public function store(ArticleRequest $request)
     {
-        return $this->createFlashRedirect(Article::class, $request);
+        return $this->createFlashRedirect(Article::class, $request, $this->imageColumn);
     }
 
     /**

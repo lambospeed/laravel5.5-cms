@@ -2,16 +2,16 @@
 <div class="row">
 <div class="col-md-12"><h3>OUR PARTNERS</h3></div>
 <div class="col-md-12 am-partners-container">
-<a href="#" class="am-partners-item"><img src="img/aetna-logo.png" alt=""></a>
-<a href="#" class="am-partners-item"><img src="img/nvidia-logo.png" alt=""></a>
-<a href="#" class="am-partners-item"><img src="img/biagio-logo.png" alt=""></a>
+<a href="#" class="am-partners-item"><img src="/img/aetna-logo.png" alt=""></a>
+<a href="#" class="am-partners-item"><img src="/img/nvidia-logo.png" alt=""></a>
+<a href="#" class="am-partners-item"><img src="/img/biagio-logo.png" alt=""></a>
 </div>
 </div>
 </div>
 
 <div class="container-fluid am-footer">
-<img class="am-footer-shape" src="img/footer-shape.png" alt="">
-<img class="am-footer-logo" src="img/white-logo.svg" alt="">
+<img class="am-footer-shape" src="/img/footer-shape.png" alt="">
+<img class="am-footer-logo" src="/img/white-logo.svg" alt="">
 <div class="row">
 <div class="col-md-12">
   <h3>stay informed</h3>

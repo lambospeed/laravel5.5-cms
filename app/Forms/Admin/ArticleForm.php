@@ -25,6 +25,10 @@ class ArticleForm extends AdminForm
             ])
             ->add('description', 'text', [
                 'label' => trans('admin.fields.article.description')
+            ])
+            ->add('picture', 'file', [
+                'label' => trans('admin.fields.article.picture'),
+                'attr' => ['class' => '']
             ]);
         $this->addButtons();
     }
