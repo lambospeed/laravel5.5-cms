@@ -4,7 +4,7 @@
     @foreach($articles as $article)
         <div class="am-blog-item">
             <div class="am-blog-item-img">
-                <a href="{{ $article->link }}"><img src="img/blog-1.jpg" alt=""></a>
+                <a href="{{ $article->link }}"><img src="/img/blog-1.jpg" alt=""></a>
             </div>
             <div class="am-blog-title">
                 <p class="am-blog-date"><span>{{ $article->category->title }}</span> - {{ $article->published_at }}</p>

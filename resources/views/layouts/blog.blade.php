@@ -25,7 +25,17 @@
 <div class="am-header">
     <div class="am-navigation dark">
         @include('partials.application.top')
-        <div class="container am-aditional-navigation"><div><span>Browse by category:</span></div><div><a href="#" class="active">All</a><a href="#">equipment</a><a href="#">finance</a><a href="#">Augmenta</a></div></div>
+        <div class="container am-aditional-navigation">
+            <div><span>Browse by category:</span></div>
+            <div>
+                <a href="{{ route('blog') }}" class="{{ isset($category) ? null : 'active' }}">All</a>
+                @if(!empty($categories))
+                    @foreach($categories as $data)
+                        <a href="{{ $data->link}}" class="{{ (isset($category)) && ($category->id === $data->id)  ? 'active' : null }}">{{ $data->title}}</a>
+                    @endforeach
+                @endif
+            </div>
+        </div>
     </div>
     <div class="container am-blog-header">
         <div class="row">

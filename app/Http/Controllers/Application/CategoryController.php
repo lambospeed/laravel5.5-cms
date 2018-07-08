@@ -15,7 +15,8 @@ class CategoryController extends ApplicationController
      */
     public function index(Category $category)
     {
-        $articles = $category->articles()->published()->orderBy('published_at', 'desc')->paginate(5);
-        return view('application.category.index', compact('articles', 'category'));
+        $articles = $category->articles()->published()->orderBy('published_at', 'desc')->paginate(6);
+        $categories = session('current_lang')->categories()->paginate(4);
+        return view('application.category.index', compact('articles', 'category', 'categories'));
     }
 }
