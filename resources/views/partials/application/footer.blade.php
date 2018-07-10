@@ -2,9 +2,7 @@
 <div class="row">
 <div class="col-md-12"><h3>OUR PARTNERS</h3></div>
 <div class="col-md-12 am-partners-container">
-<a href="#" class="am-partners-item"><img src="/img/aetna-logo.png" alt=""></a>
 <a href="#" class="am-partners-item"><img src="/img/nvidia-logo.png" alt=""></a>
-<a href="#" class="am-partners-item"><img src="/img/biagio-logo.png" alt=""></a>
 </div>
 </div>
 </div>
@@ -33,11 +31,11 @@
 </div>
 <div class="row">
   <div class="col-md-12 am-footer-social">
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-facebook-square"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/augmentaagr/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/AugmentaAgricu1" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/channel/UCeVzuupJBPI39a2G7yxZ0Lg" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/augmentaagr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/augmentaag/" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 </div>
 </div>

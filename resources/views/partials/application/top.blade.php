@@ -26,13 +26,13 @@
         <div class="form-inline my-2 my-lg-0">
             <div class="am-social-container">
                 @if(!empty(config('settings')->facebook))
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/augmentaagr/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 @endif
                 @if(!empty(config('settings')->facebook))
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/augmentaagr" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 @endif
                 @if(!empty(config('settings')->facebook))
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/augmentaag/" target="_blank"><i class="fab fa-instagram"></i></a>
                 @endif
             </div>
             <div>

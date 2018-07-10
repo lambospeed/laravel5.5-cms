@@ -13,7 +13,11 @@
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/css/styles.css')) }}">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{asset('img/icons/favicon-32x32.ico')}}" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-16x16.png')}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-64x64.png')}}" sizes="64x64">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-128x128.png')}}" sizes="128x128">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,13 +27,17 @@
 </head>
 <body>
 <div class="am-header">
-    <div class="am-navigation light">
-        @include('partials.application.top')
-    </div>
-    <h1 class="am-entry-1">Boost yield, enhance quality & reduce input spend</h1>
-    <div class="am-entry-2"><a href="#" class="am-green-button">watch full video <i class="fas fa-caret-right"></i></a></div>
-    <p class="am-mouse-secr am-entry-3">Rip the benefits of automated fertilization in real-time</p>
-    <div class="am-gonext"></div>
+  <video autoplay muted loop style="position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100vh;">
+    <source src="/img/background.mp4" type="video/mp4">
+  </video>
+  <div class="am-header-overlay" style="position:absolute; width: 100vw; height: 100vh; top: 0; left: 0; opacity: 0.3; background: black;"></div>
+  <div class="am-navigation light">
+      @include('partials.application.top')
+  </div>
+  <h1 class="am-entry-1">Boost yield, enhance quality & reduce input spend</h1>
+  <div class="am-entry-2"><a href="https://youtu.be/lZAKWDjkQ38" target="_blank" class="am-green-button">watch full video <i class="fas fa-caret-right"></i></a></div>
+  <p class="am-mouse-secr am-entry-3">Rip the benefits of automated fertilization in real-time</p>
+  <div class="am-gonext"></div>
 </div>
 <div class="container-fluid am-explore">
 <div class="row">
@@ -44,7 +52,7 @@
     <p class="am-explore-container"><strong>Artifical Intelligence</strong> technology enables crops reach their full potential based on the needs of every inch of the field, helping farmers substantially increase their bottom-line by boosting yield and decreasing day to day input costs.</p>
   </div>
   <div class="col-md-12 text-center">
-    <a href="#" class="am-transp-button">explore <i class="far fa-arrow-alt-circle-right"></i></a>
+    <a href="{{ route('product') }}" class="am-transp-button">explore <i class="far fa-arrow-alt-circle-right"></i></a>
   </div>
   <div class="am-explore-illustration-container">
     <img class="am-explore-cloud-1" src="img/cloud-1.svg" alt="">

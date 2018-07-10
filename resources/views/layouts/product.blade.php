@@ -13,7 +13,11 @@
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/css/styles.css')) }}">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{asset('img/icons/favicon-32x32.ico')}}" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-16x16.png')}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-64x64.png')}}" sizes="64x64">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-128x128.png')}}" sizes="128x128">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,40 +52,35 @@
     <div class="am-manual-content active" data-content="1">
       <div class="am-manual-title-mask"><h2>Plug n’ Play device, <span>isobus compatible</span></h2></div>
       <div class="am-manual-video">
-        <div class="am-video-play"><i class="fas fa-play"></i></div>
-        <img src="img/video-preview-1.jpg" alt="">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AeQfnbpt4Nw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="2">
       <div class="am-manual-title-mask"><h2>100% automation from crop scanning <span>to fertilizer application and pesticide spraying </span></h2></div>
       <div class="am-manual-video">
-        <div class="am-video-play"><i class="fas fa-play"></i></div>
-        <img src="img/video-preview-2.jpg" alt="">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i2crLfmMd7s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="3">
       <div class="am-manual-title-mask"><h2>Hyperspectral computer vision detects crop diseases and nutrient deficiencies <span>in real time </span></h2></div>
       <div class="am-manual-video">
-        <div class="am-video-play"><i class="fas fa-play"></i></div>
-        <img src="img/video-preview-3.jpg" alt="">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q2jr9W5jEgM?rel=0&amp;showinfo=0 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="4">
       <div class="am-manual-title-mask"><h2>Real-time dosage adjustment by <span>controlling spreader sliders and sprayer electrovalves</span></h2></div>
       <div class="am-manual-video">
-        <div class="am-video-play"><i class="fas fa-play"></i></div>
-        <img src="img/video-preview-4.jpg" alt="">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FJddWGRHOMI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="5">
       <div class="am-manual-title-mask"><h2>Visual data analytics <span>in a private, secure platform</span></h2></div>
       <div class="am-manual-video">
-        <div class="am-video-play"><i class="fas fa-play"></i></div>
-        <img src="img/video-preview-1.jpg" alt="">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AeQfnbpt4Nw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
   </div>

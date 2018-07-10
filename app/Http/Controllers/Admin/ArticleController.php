@@ -69,7 +69,7 @@ class ArticleController extends AdminController
      */
     public function update(Article $article, ArticleRequest $request)
     {
-        return $this->saveFlashRedirect($article, $request);
+        return $this->saveFlashRedirect($article, $request, $this->imageColumn);
     }
 
     /**

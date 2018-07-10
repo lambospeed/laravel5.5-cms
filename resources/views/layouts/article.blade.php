@@ -13,7 +13,11 @@
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/blog/css/styles.css')) }}">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{asset('img/icons/favicon-32x32.ico')}}" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-16x16.png')}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-64x64.png')}}" sizes="64x64">
+    <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-128x128.png')}}" sizes="128x128">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +36,7 @@
             <div class="col-md-12 am-post-header">
             <p class="am-header-date am-entry-1"><span>{{ $article->category->title}}</span> - {{ $article->published_at }}</p>
             <h1 class="am-entry-2">{{ $article->title }}</h1>
-            <p class="am-post-description am-entry-3">School’s out, summer’s here and kids are spending more time at home. I’ve been hearing from friends and fellow parents that it’s harder to keep kids entertained during these summer months.</p>
+            <p class="am-post-description am-entry-3">{{ $article->description }}</p>
             </div>
         </div>
     </div>
