@@ -12,6 +12,7 @@ $(document).ready(function() {
   events();
   subscribe();
   sendmessage();
+  smoothScroll();
 
 function scaner (){
 
@@ -192,6 +193,40 @@ function snapChart() {
   p[0].animate({ d: "M0,25.4c31.2,0,64.6-3.7,89-25" }, 1000, mina.bounce);
   pa[0].animate({ d: "M89.5,0.9c-24.4,21.3-57.8,25-89,25h89V0.9z" }, 1000, mina.bounce);
 
+}
+
+function smoothScroll() {
+  /*-- Smoth-Scroll --*/
+  $('#beta_tester').click(function (event) {
+      // On-page links
+      if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname
+      ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 1000, function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                      return false;
+                  } else {
+                      $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                      $target.focus(); // Set focus again
+                  };
+              });
+          }
+      }
+  });
 }
 
 (function($) {

@@ -163,7 +163,7 @@
   </div>
 </div>
 
-<div class="am-contact">
+<div class="am-contact" id="contact_tester">
   <div class="container">
     <div class="row form-input">
       <div class="col-md-12 text-center">

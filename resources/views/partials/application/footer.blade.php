@@ -32,7 +32,7 @@
 <div class="row">
   <div class="col-md-12 am-footer-social">
     <a href="https://www.linkedin.com/company/augmentaagr/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/AugmentaAgricu1" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://twitter.com/AugmentaAg?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
     <a href="https://www.youtube.com/channel/UCeVzuupJBPI39a2G7yxZ0Lg" target="_blank"><i class="fab fa-youtube"></i></a>
     <a href="https://www.facebook.com/augmentaagr" target="_blank"><i class="fab fa-facebook-square"></i></a>
     <a href="https://www.instagram.com/augmentaag/" target="_blank"><i class="fab fa-instagram"></i></a>

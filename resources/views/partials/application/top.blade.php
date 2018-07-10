@@ -36,7 +36,7 @@
                 @endif
             </div>
             <div>
-                <a href="#" class="am-white-button">Become a beta tester</a>
+                <a href="#contact_tester" class="am-white-button" id="beta_tester">Become a beta tester</a>
             </div>
         </div>
     </div>
