@@ -13,6 +13,7 @@
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/css/styles.css')) }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" rel="stylesheet">
     <link rel="icon" href="{{asset('img/icons/favicon-32x32.ico')}}" type="image/x-icon" />
     <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-16x16.png')}}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-32x32.png')}}" sizes="32x32">
@@ -26,6 +27,8 @@
     <![endif]-->
 </head>
 <body class="am-product-page">
+<div id="fullPage">
+<section class="vertical-scrolling">
 <div class="am-header">
     <div class="am-navigation tr-dark">
         @include('partials.application.top')
@@ -34,6 +37,9 @@
     <div class="am-3d am-entry-3"><img src="img/augmenta-3d.png" alt=""></div>
     <div class="am-gonext"></div>
 </div>
+</section>
+
+<section class="vertical-scrolling">
 <div class="container am-manual">
 <div class="row">
 <div class="col-md-12">
@@ -52,35 +58,45 @@
     <div class="am-manual-content active" data-content="1">
       <div class="am-manual-title-mask"><h2>Plug n’ Play device, <span>isobus compatible</span></h2></div>
       <div class="am-manual-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AeQfnbpt4Nw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop style="height: 100%">
+          <source src="/img/01_AUG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="2">
       <div class="am-manual-title-mask"><h2>100% automation from crop scanning <span>to fertilizer application and pesticide spraying </span></h2></div>
       <div class="am-manual-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i2crLfmMd7s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop style="height: 100%">
+          <source src="/img/01_AUG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="3">
       <div class="am-manual-title-mask"><h2>Hyperspectral computer vision detects crop diseases and nutrient deficiencies <span>in real time </span></h2></div>
       <div class="am-manual-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q2jr9W5jEgM?rel=0&amp;showinfo=0 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop style="height: 100%">
+          <source src="/img/02_AUG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="4">
       <div class="am-manual-title-mask"><h2>Real-time dosage adjustment by <span>controlling spreader sliders and sprayer electrovalves</span></h2></div>
       <div class="am-manual-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FJddWGRHOMI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop style="height: 100%">
+          <source src="/img/03_AUG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="am-manual-content" data-content="5">
       <div class="am-manual-title-mask"><h2>Visual data analytics <span>in a private, secure platform</span></h2></div>
       <div class="am-manual-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AeQfnbpt4Nw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <video autoplay muted loop style="height: 100%">
+          <source src="/img/04_AUG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
