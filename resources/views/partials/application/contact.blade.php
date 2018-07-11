@@ -2,16 +2,19 @@
   <div class="container">
     <div class="row form-input">
       <div class="col-md-12 text-center">
-        <h3>Want to become one<br> of our <span>premium beta testers?</span></h3>
-        <span class="am-contact-subtitle">Reach out for more information</span>
+        <h3 class="am-entry-1">Want to become one<br> of our <span>premium beta testers?</span></h3>
+        <span class="am-contact-subtitle am-entry-2">Reach out for more information</span>
       </div>
       @if(session('message'))
-	<div class='alert alert-success'>
-		{{ session('message') }}
-	</div>
-	@endif
-      <div class="col-md-10 offset-md-1">
-         <form id="am-form" action="{{ route('send') }}" method="POST">
+      <div class="row form-thankyou">
+      <div class="col-md-12 text-center">
+        <h3>Thank you!</h3>
+        <span>Your message has beed received. We’ll get back to you shortly.</span>
+      </div>
+    </div>
+      @endif
+      <div class="col-md-10 offset-md-1 am-entry-3">
+         <form id="am-form" action="{{ route('tester.store') }}" method="POST">
            {{ csrf_field() }}
            <div class="container">
              <div class="row">

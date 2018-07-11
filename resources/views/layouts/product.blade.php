@@ -43,7 +43,7 @@
 <div class="container am-manual">
 <div class="row">
 <div class="col-md-12">
-  <div class="am-manual-slider-container">
+  <div class="am-manual-slider-container am-entry-1">
     <div class="am-manual-slider-prev"><img src="img/arrow-left.png" alt=""></div>
     <div class="am-manual-slider-next"><img src="img/arrow-right.png" alt=""></div>
     <div class="am-manual-slider">
@@ -54,7 +54,7 @@
       <div class="am-manual-item" data-content="5"><p class="am-manual-step">.05</p><div class="am-manual-mask"><img src="img/data-icon.svg" alt=""></div><p class="am-manual-title">Actionable Data</p></div>
     </div>
   </div>
-  <div class="am-manual-container">
+  <div class="am-manual-container am-entry-2">
     <div class="am-manual-content active" data-content="1">
       <div class="am-manual-title-mask"><h2>Plug n’ Play device, <span>isobus compatible</span></h2></div>
       <div class="am-manual-video">
@@ -103,26 +103,33 @@
 </div>
 </div>
 </div>
+</section>
 
+<section class="vertical-scrolling">
 <div class="am-learning">
   <div class="container">
   <div class="row">
     <div class="col-md-6 am-learning-column-1">
       <div>
-      <h3>Augmenta is <span>"learning"</span> on the go, using a plug-n-play device that can be mounted on any tractor and controls agricultural machinery by analyzing real-time, close range, 4k video data.</h3>
-      <p>Augmenta’s Field Analyzer is the only product that can promise efficiency for every inch of the farm by capitalizing on proprietary artificial intelligence techniques both on the device itself and in the cloud, ripping benefits of real-time and at rest analysis.</p>
+      <h3 class="am-entry-1">Augmenta is <span>"learning"</span> on the go, using a plug-n-play device that can be mounted on any tractor and controls agricultural machinery by analyzing real-time, close range, 4k video data.</h3>
+      <div class="am-entry-2"><p>Augmenta’s Field Analyzer is the only product that can promise efficiency for every inch of the farm by capitalizing on proprietary artificial intelligence techniques both on the device itself and in the cloud, ripping benefits of real-time and at rest analysis.</p></div>
       </div>
     </div>
     <div class="col-md-6">
-      <img src="img/augmenta-bg.png" alt="">
+      <img class="am-entry-3" src="img/augmenta-bg.png" alt="">
     </div>
   </div>
   </div>
 </div>
+</section>
+<section class="vertical-scrolling">
 @include('partials.application.footer')
+</section>
+</div>
 <script src="{{ asset(mix('dist/js/script.js')) }}" type="text/javascript"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </body>
 </html>

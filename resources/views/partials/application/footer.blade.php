@@ -15,8 +15,9 @@
   <h3>stay informed</h3>
   <p class="am-footer-subtitle">Join our mailing list</p>
   <div class="d-flex w-100 align-items-center q-posr">
-    <form id="am-subscribe-form" action="#" method="GET">
-    <input class="inputMaterial" type="email" name="EMAIL" required>
+    <form action="{{ route('subscribe')}}" method="POST">
+    {{ csrf_field() }}
+    <input class="inputMaterial" type="email" name="email" required>
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Your email here</label>

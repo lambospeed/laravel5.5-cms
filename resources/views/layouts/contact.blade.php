@@ -13,6 +13,7 @@
     <meta name="description" property="og:description" content="@yield('description')">
     <meta name="twitter:description" content="@yield('description')">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('dist/css/styles.css')) }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" rel="stylesheet">
     <link rel="icon" href="{{asset('img/icons/favicon-32x32.ico')}}" type="image/x-icon" />
     <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-16x16.png')}}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{asset('img/icons/favicon-32x32.png')}}" sizes="32x32">
@@ -26,6 +27,8 @@
     <![endif]-->
 </head>
 <body class="am-contact-page">
+<div id="fullPage">
+<section class="vertical-scrolling">
 <div class="am-header">
     <div class="am-navigation light">
         @include('partials.application.top')
@@ -36,8 +39,14 @@
     <div class="am-ca-3 am-ca-anim2"></div>
     <div class="am-ca-4 am-ca-anim"></div>
   </div>
+  <div class="am-circles-animation">
+    <div class="am-ca-1"></div>
+    <div class="am-ca-2 am-ca-anim3"></div>
+    <div class="am-ca-3 am-ca-anim2"></div>
+    <div class="am-ca-4 am-ca-anim"></div>
+  </div>
   <h1 class="am-entry-1">Get in touch</h1>
-  <p class="am-header-subtitle am-entry-2">Feel free to contact us directly or via the form below</p>
+  <div class="am-entry-2"><p class="am-header-subtitle">Feel free to contact us directly or via the form below</p></div>
   <div class="am-bloks-container">
     <div class="am-bloks-item am-entry-3">
       <img src="img/location-icon.svg" alt="">
@@ -57,14 +66,17 @@
   </div>
   <div class="am-gonext"></div>
 </div>
+</section>
+
+<section class="vertical-scrolling">
 <div class="am-contact">
   <div class="container">
     <div class="row form-input">
       <div class="col-md-12 text-center">
-        <h3>Contact us</span></h3>
-        <span class="am-contact-subtitle">Reach out for more information</span>
+        <h3 class="am-entry-1">Contact us</span></h3>
+        <div class="am-entry-2"><span class="am-contact-subtitle">Reach out for more information</span></div>
       </div>
-      <div class="col-md-10 offset-md-1">
+      <div class="col-md-10 offset-md-1 am-entry-3">
          <form id="am-form" action="form-process.php" method="POST">
            <div class="container">
              <div class="row">
@@ -124,10 +136,16 @@
     </div>
   </div>
 </div>
+</section>
+<section class="vertical-scrolling">
 @include('partials.application.footer')
+</section>
+
+</div>
 <script src="{{ asset(mix('dist/js/script.js')) }}" type="text/javascript"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </body>
 </html>

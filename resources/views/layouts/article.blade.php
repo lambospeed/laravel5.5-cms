@@ -51,48 +51,21 @@
     <div class="col-md-12">
       <h2>related articles</h2>
       <div class="col-md-12 am-related-container">
-
-      <div class="am-blog-item">
-        <div class="am-blog-item-img">
-          <a href="post.html"><img src="/img/blog-1.jpg" alt=""></a>
+      @foreach($articles as $article)
+        <div class="am-blog-item">
+            <div class="am-blog-item-img">
+                <a href="{{ $article->link }}"><img src="{{ URL::to('/') }}/{{ $article->picture }}" alt=""></a>
+            </div>
+            <div class="am-blog-title">
+                <p class="am-blog-date"><span>{{ $article->category->title }}</span> - {{ $article->published_at }}</p>
+                <a href="{{ $article->link }}"><h3>{{ $article->title }}</h3></a>
+                <div class="am-blog-buttons">
+                    <div><a href="{{ $article->link }}" class="am-button">{{ trans('application.read_more') }} <i class="far fa-arrow-alt-circle-right"></i></a></div>
+                    <div><a href="{{ $article->link }}" class="am-button"><i class="fas fa-reply"></i></a></div>
+                </div>
+            </div>
         </div>
-        <div class="am-blog-title">
-        <p class="am-blog-date"><span>Category</span> - dec 8, 2018</p>
-        <a href="post.html"><h3>Four tips for taking delectable food photos with Pixel 2</h3></a>
-        <div class="am-blog-buttons">
-          <div><a href="post.html" class="am-button" href="#">read article <i class="far fa-arrow-alt-circle-right"></i></a></div>
-          <div><a href="post.html" class="am-button"><i class="fas fa-reply"></i></a></div>
-        </div>
-        </div>
-      </div>
-
-      <div class="am-blog-item">
-        <div class="am-blog-item-img">
-          <a href="post.html"><img src="/img/blog-2.jpg" alt=""></a>
-        </div>
-        <div class="am-blog-title">
-        <p class="am-blog-date"><span>Category</span> - dec 8, 2018</p>
-        <a href="post.html"><h3>Google Home, the summer camp counselor every family needs</h3></a>
-        <div class="am-blog-buttons">
-          <div><a href="post.html" class="am-button" href="#">read article <i class="far fa-arrow-alt-circle-right"></i></a></div>
-          <div><a href="post.html" class="am-button"><i class="fas fa-reply"></i></a></div>
-        </div>
-        </div>
-      </div>
-
-      <div class="am-blog-item">
-        <div class="am-blog-item-img">
-          <a href="#"><img src="/img/blog-3.jpg" alt=""></a>
-        </div>
-        <div class="am-blog-title">
-        <p class="am-blog-date"><span>Category</span> - dec 8, 2018</p>
-        <a href="post.html"><h3>7 must-see Chrome Enterprise sessions at Google Cloud Next</h3></a>
-        <div class="am-blog-buttons">
-          <div><a href="post.html" class="am-button" href="#">read article <i class="far fa-arrow-alt-circle-right"></i></a></div>
-          <div><a href="post.html" class="am-button"><i class="fas fa-reply"></i></a></div>
-        </div>
-        </div>
-      </div>
+    @endforeach
 
       </div>
     </div>

@@ -15,6 +15,7 @@ class ArticleController extends ApplicationController
      */
     public function index(Article $article)
     {
-        return view('application.article.index', compact('article'));
+        $articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(3);
+        return view('application.article.index', compact('article', 'articles'));
     }
 }
