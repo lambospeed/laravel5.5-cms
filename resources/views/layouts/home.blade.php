@@ -31,7 +31,7 @@
 <div id="fullPage">
 <section class="vertical-scrolling">
 <div class="am-header">
-  <video autoplay="" muted="" loop="" style="position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100vh;" id="video">
+  <video autoplay="" muted="" loop="" data-keepplaying style="position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100vh;" id="video">
     <source src="/img/background.mp4" type="video/mp4">
   </video>
   <div class="am-header-overlay" style="position:absolute; width: 100vw; height: 100vh; top: 0; left: 0; opacity: 0.3; background: black;"></div>

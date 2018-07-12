@@ -85,19 +85,20 @@
   <div class="row">
     <div class="col-md-12"><h2 class="am-entry-1">Who stands behind <span><span>The</span> augmenta?</span></h2></div>
     <div class="am-team-avatars bottom am-entry-2">
-    <div class="am-t-1"><img src="/img/Untitled-1.png" alt=""><div class="am-team-descr"><p>George Varvarelis</p><p><span>Founder & CEO</span></p></div></div>
-    <div class="am-t-2"><img src="/img/Untitled-2.png" alt=""><div class="am-team-descr"><p>Dimitris Evangelopoulos</p><p><span>Founder & COO</span></p></div></div>
-    <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Alex Nikolakakis</p><p><span>Founder & CTO</span></p></div></div>
+    <div class="am-t-1"><img src="/img/Untitled-1.png" alt=""><div class="am-team-descr"><p>George Varvarelis</p><p><span>Co-Founder & CEO</span></p></div></div>
+    <div class="am-t-2"><img src="/img/Untitled-2.png" alt=""><div class="am-team-descr"><p>Dimitris Evangelopoulos</p><p><span>Co-Founder & COO</span></p></div></div>
+    <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Alex Nikolakakis</p><p><span>CTO</span></p></div></div>
     </div>
     <div class="am-team-avatars bottom am-entry-2">
-    <div class="am-t-1"><img src="/img/Untitled-4.png" alt=""><div class="am-team-descr"><p>Dimitris Akridas</p><p><span>Founder & Full Stack Engineer</span></p></div></div>
-    <div class="am-t-2"><img src="/img/Untitled-5.png" alt=""><div class="am-team-descr"><p>Dr.Christos Kavalaris</p><p><span>Founder & Chief Agronomist</span></p></div></div>
+    <div class="am-t-1"><img src="/img/Untitled-4.png" alt=""><div class="am-team-descr"><p>Dimitris Akridas</p><p><span>Head of Data Engineering</span></p></div></div>
+    <div class="am-t-2"><img src="/img/Untitled-5.png" alt=""><div class="am-team-descr"><p>Chris Cavalaris</p><p><span>Head of Agronomy</span></p></div></div>
     <div class="am-t-3"><img src="/img/Untitled-6.png" alt=""><div class="am-team-descr"><p>Katerina Karakoula</p><p><span>Founder & Computer Vision Engineer</span></p></div></div>
     </div>
     <div class="am-team-avatars bottom am-entry-2">
-    <div class="am-t-1"><img src="/img/Untitled-7.png" alt=""><div class="am-team-descr"><p>Kostas Karakasiliotis</p><p><span>Founder & Industrial Design-Mechanics</span></p></div></div>
-    <div class="am-t-2"><img src="/img/Untitled-8.png" alt=""><div class="am-team-descr"><p>Pavlos Stavrou</p><p><span>Fonder & Back-end Developer-firmware</span></p></div></div>
-    <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Satya Nadella</p><p><span>Chief Executive Officer</span></p></div></div>
+    <div class="am-t-1"><img src="/img/Untitled-7.png" alt=""><div class="am-team-descr"><p>Kostas Karakasiliotis</p><p><span>Industrial Designer - Mechanics</span></p></div></div>
+    <div class="am-t-2"><img src="/img/Untitled-8.png" alt=""><div class="am-team-descr"><p>Pavlos Stavrou</p><p><span>System Level Developer</span></p></div></div>
+    <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Konstantinos Moustinas</p><p><span>Brand/Marketing Manager</span></p></div></div>
+    <!-- <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Areti Bilal0</p><p><span>Operations Analyst</span></p></div></div> -->
     </div>
     <div class="am-team-border am-entry-4"><div class="am-border-circle"><img src="img/logo-gray.svg" alt=""></div></div>
   </div>

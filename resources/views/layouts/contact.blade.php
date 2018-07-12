@@ -57,12 +57,13 @@
     <div class="am-bloks-item blr1 am-entry-4 d3">
       <img src="/img/email-icon.svg" alt="">
       <p class="am-bloks-title">email</p>
-      <p class="am-bloks-subtitle">office@augmenta.com</p>
+      <p class="am-bloks-subtitle">info@augmenta.com</p>
     </div>
     <div class="am-bloks-item am-entry-5 d6">
       <img src="/img/phone-icon.svg" alt="">
       <p class="am-bloks-title">phone</p>
-      <p class="am-bloks-subtitle">+30 21 0370 7000</p>
+      <p class="am-bloks-subtitle">+30 69 8698 6798</p>
+      <p class="am-bloks-subtitle">+1 73 7932 3096</p>
     </div>
   </div>
   <div class="am-gonext"></div>
