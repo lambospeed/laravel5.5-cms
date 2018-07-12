@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ Request::url() }}">
     <meta name="twitter:url" content="{{ Request::url() }}">
@@ -49,17 +50,17 @@
   <div class="am-entry-2"><p class="am-header-subtitle">Feel free to contact us directly or via the form below</p></div>
   <div class="am-bloks-container">
     <div class="am-bloks-item am-entry-3">
-      <img src="img/location-icon.svg" alt="">
+      <img src="/img/location-icon.svg" alt="">
       <p class="am-bloks-title">location</p>
       <p class="am-bloks-subtitle">Iereos Dousi 8, Marousi 151 24, Greece</p>
     </div>
     <div class="am-bloks-item blr1 am-entry-4 d3">
-      <img src="img/email-icon.svg" alt="">
+      <img src="/img/email-icon.svg" alt="">
       <p class="am-bloks-title">email</p>
       <p class="am-bloks-subtitle">office@augmenta.com</p>
     </div>
     <div class="am-bloks-item am-entry-5 d6">
-      <img src="img/phone-icon.svg" alt="">
+      <img src="/img/phone-icon.svg" alt="">
       <p class="am-bloks-title">phone</p>
       <p class="am-bloks-subtitle">+30 21 0370 7000</p>
     </div>
@@ -77,7 +78,8 @@
         <div class="am-entry-2"><span class="am-contact-subtitle">Reach out for more information</span></div>
       </div>
       <div class="col-md-10 offset-md-1 am-entry-3">
-         <form id="am-form" action="form-process.php" method="POST">
+         <form id="am-form" action="{{ route('tester.store') }}" method="POST">
+         {{ csrf_field() }}
            <div class="container">
              <div class="row">
                <div class="col-md-6">
@@ -93,7 +95,7 @@
                    <input class="inputMaterial" type="text" name="company" required>
                    <span class="highlight"></span>
                    <span class="bar"></span>
-                   <label>Company</label>
+                   <label>Company or Crop</label>
                  </div>
                </div>
                <div class="col-md-6">
@@ -146,6 +148,7 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </body>
 </html>

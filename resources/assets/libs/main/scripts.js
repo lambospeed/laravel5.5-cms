@@ -8,16 +8,84 @@ $(document).ready(function() {
   scaner ();
 
   if($('#svg-1').length > 0){snapChart();checkSnapChart();}
+  if($('#am-cv-form').length > 0){cvForm();}
   if (screen && screen.width > 768) {verticalScroll();}
 
 
   events();
-  smoothScroll();
 
 function scaner (){
 
     $('.am-scaner-circle').drags();
   }
+
+function cvForm() {
+
+ var validatedFiles = [];
+
+ var input = $(this).find('.input-file');
+ var label = $(this).find('.am-files');
+
+  $(document).on('change',input, function(element){
+     var fileName = '';
+     if (element.target.value) {
+     var files = element.originalEvent.target.files;
+     Array.prototype.forEach.call(files, function(file) {
+       validatedFiles.push(file);
+     });
+     buildList (label, "f");
+     }
+
+  });
+
+function buildList (label, fname) {
+
+	document.querySelector('.am-files').innerHTML = '';
+  validatedFiles.forEach(function (file, key) {
+	  if (file.name) {
+      var div = document.createElement('div');
+      div.innerHTML = "<div class='am-filename'><span class='am-filename-container'>"+file.name+"</span><img src='img/close.png' data-delete="+key+" data-form="+fname+" class='am-file-delete'></div>";
+      document.querySelector(".am-files").appendChild(div);
+    }
+	});
+  $(".am-file-delete").on("click", function (){
+	validatedFiles.splice($(this).data("delete"), 1);
+  buildList ($("#"+fname+" .am-files"), fname);
+})
+}
+
+$("#am-cv-form").on( "submit", function( event ) {
+
+  var form = $(this);
+	event.preventDefault();
+
+  var formData = new FormData();
+
+  formData.append('name', form.find("input[name='name']").val());
+  formData.append('surname', form.find("input[name='surname']").val());
+  formData.append('email', form.find("textarea[name='email']").val());
+
+  validatedFiles.forEach(function (file, key) {
+ 		 formData.append('files[]', file, file.name);
+	});
+
+  if (grecaptcha.getResponse() != ""){
+    $.ajax({
+       url : form.attr('action'),
+       type : 'POST',
+       data : formData,
+       processData: false,
+       contentType: false,
+       success : function(data) {
+         form.slideUp(()=> {
+             $('.am-jobs .am-form-thankyou').slideDown();
+         });
+       }
+  });    
+  }
+})
+
+}
 
 function verticalScroll() {
 
@@ -25,8 +93,16 @@ function verticalScroll() {
     sectionSelector: '.vertical-scrolling',
     navigation: true,
     slidesNavigation: true,
+    scrollOverflow: true,
     afterRender: function(){
         if($('#video').length > 0){$('#video')[0].play();}
+    },
+    onLeave: function(){
+        if($('#video1').length > 0){$('#video1')[0].play();}
+        $('.am-manual-slider .am-manual-item.active').removeClass('active');
+        $('.am-manual-slider .am-manual-item:first-child').addClass('active');
+        $('.am-manual-container [data-content]').removeClass('visible');
+        $('.am-manual-container [data-content=1]').addClass('visible');
     },
     controlArrows: false
 });
@@ -106,15 +182,11 @@ $('.am-scan-buttons a').on('click', function () {
 }
 
 function sliderChanger(el) {
-  $('.am-manual-container [data-content]').each(function(){
-    if($(this).data('content') != el.data('content')) {
-      var el_src = $(this).find('iframe').attr("src");
-      $(this).find('iframe').attr("src",el_src);
-    }
-  });
+  $("video").each(function () { this.pause() });
 
-  $('.am-manual-container [data-content]').removeClass('active');
-  $('.am-manual-container [data-content='+el.data('content')+']').addClass('active');
+  $('.am-manual-container [data-content]').removeClass('visible');
+  $('.am-manual-container [data-content='+el.data('content')+']').addClass('visible');
+  if($('#video'+el.data('content')).length > 0){$('#video'+el.data('content'))[0].play();}
 
 }
 
@@ -169,40 +241,6 @@ function snapChart() {
   p[0].animate({ d: "M0,25.4c31.2,0,64.6-3.7,89-25" }, 1000, mina.bounce);
   pa[0].animate({ d: "M89.5,0.9c-24.4,21.3-57.8,25-89,25h89V0.9z" }, 1000, mina.bounce);
 
-}
-
-function smoothScroll() {
-  /*-- Smoth-Scroll --*/
-  $('#beta_tester').click(function (event) {
-      // On-page links
-      if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-          location.hostname == this.hostname
-      ) {
-          // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $('html, body').animate({
-                  scrollTop: target.offset().top
-              }, 1000, function () {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) { // Checking if the target was focused
-                      return false;
-                  } else {
-                      $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                      $target.focus(); // Set focus again
-                  };
-              });
-          }
-      }
-  });
 }
 
 (function($) {

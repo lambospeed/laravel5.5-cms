@@ -51,20 +51,20 @@
   <div class="col-md-12"><h2 class="am-entry-1">Augmenta's <span>Field Analyzer</span></h2></div>
   <div class="col-md-6 posr am-entry-2">
     <div class="am-border-left-1px"></div>
-    <img class="am-explore-icon" src="img/scan-icon.svg" alt="">
+    <img class="am-explore-icon" src="/img/scan-icon.svg" alt="">
     <p class="am-explore-container"><strong>Plug and Play</strong> hardware scans the field in real time and controls agricultural machinery allowing for 100% automated fertilizer application and pesticide spraying with unforeseen precision.</p>
   </div>
   <div class="col-md-6 am-entry-3">
-    <img class="am-explore-icon" src="img/plant-icon.svg" alt="">
+    <img class="am-explore-icon" src="/img/plant-icon.svg" alt="">
     <p class="am-explore-container"><strong>Artifical Intelligence</strong> technology enables crops reach their full potential based on the needs of every inch of the field, helping farmers substantially increase their bottom-line by boosting yield and decreasing day to day input costs.</p>
   </div>
   <div class="col-md-12 text-center am-entry-4">
     <a href="{{ route('product') }}" class="am-transp-button">explore <i class="far fa-arrow-alt-circle-right"></i></a>
   </div>
   <div class="am-explore-illustration-container am-entry-5">
-    <img class="am-explore-cloud-1" src="img/cloud-1.svg" alt="">
-    <img class="am-explore-cloud-2" src="img/cloud-2.svg" alt="">
-    <img class="am-explore-illustration" src="img/augmenta-illustration.png" alt="">
+    <img class="am-explore-cloud-1" src="/img/cloud-1.svg" alt="">
+    <img class="am-explore-cloud-2" src="/img/cloud-2.svg" alt="">
+    <img class="am-explore-illustration" src="/img/augmenta-illustration.png" alt="">
   </div>
 </div>
 </div>
@@ -72,7 +72,7 @@
 
 <section class="vertical-scrolling">
 <div class="am-scan">
-  <div class="am-scaner"><div class="am-scaner-circle"><img src="img/arrows.png" alt=""></div></div>
+  <div class="am-scaner"><div class="am-scaner-circle"><img src="/img/arrows.png" alt=""></div></div>
   <div class="am-scan-2 fertilizer"></div>
   <div class="am-scan-1 fertilizer" style="clip: rect(auto, 68vw, auto, auto);"></div>
   <div class="am-scan-title-container">
@@ -90,9 +90,9 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-md-9 am-charts-3d">
-      <div class="am-charts-3d-title"><div><h2 class="am-entry-1">Augmenta <span>offers</span></h2></div><div class="am-entry-3"><img src="img/3d-icon.png" alt=""></div></div>
+      <div class="am-charts-3d-title"><div><h2 class="am-entry-1">Augmenta <span>offers</span></h2></div><div class="am-entry-3"><img src="/img/3d-icon.png" alt=""></div></div>
       <div class="am-3d-bg"></div>
-      <div class="am-3d am-entry-2"><img src="img/augmenta-3d-b.png" alt=""></div>
+      <div class="am-3d am-entry-2"><img src="/img/augmenta-3d-b.png" alt=""></div>
       <div class="am-charts-container am-entry-6">
         <div class="am-charts-item active" data-path="0">
           <p>yeld production up to</p>
@@ -191,6 +191,7 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </body>
 </html>

@@ -1,20 +1,20 @@
 <div class="container-fluid am-partners">
 <div class="row">
-<div class="col-md-12"><h3>OUR PARTNERS</h3></div>
-<div class="col-md-12 am-partners-container">
-<a href="#" class="am-partners-item"><img src="/img/nvidia-logo.png" alt=""></a>
+<div class="col-md-12"><h3 class="am-entry-1">OUR PARTNERS</h3></div>
+<div class="col-md-12 am-partners-container am-entry-2">
+<a href="http://www.nvidia.com/page/home.html" class="am-partners-item"><img src="/img/nvidia-logo.png" alt=""></a>
 </div>
 </div>
 </div>
 
 <div class="container-fluid am-footer">
-<img class="am-footer-shape" src="/img/footer-shape.png" alt="">
-<img class="am-footer-logo" src="/img/white-logo.svg" alt="">
+<img class="am-footer-shape" src="img/footer-shape.png" alt="">
+<img class="am-footer-logo" src="img/white-logo.svg" alt="">
 <div class="row">
 <div class="col-md-12">
-  <h3>stay informed</h3>
-  <p class="am-footer-subtitle">Join our mailing list</p>
-  <div class="d-flex w-100 align-items-center q-posr">
+  <h3 class="am-entry-3">stay informed</h3>
+  <p class="am-footer-subtitle am-entry-3">Join our mailing list</p>
+  <div class="d-flex w-100 align-items-center q-posr am-entry-4">
     <form action="{{ route('subscribe')}}" method="POST">
     {{ csrf_field() }}
     <input class="inputMaterial" type="email" name="email" required>

@@ -89,9 +89,9 @@ html, body {
 
 /* HEADER */
 
-.am-header {min-height: 100vh;padding-top: 40vh;text-align: center;position: relative;background-image: url("../../img/hero-1.jpg");background-repeat: no-repeat;background-position: center center;background-size: cover;}
+.am-header {min-height: 100vh;padding-top: 40vh;text-align: center;position: relative;background-image: url("/img/hero-1.jpg");background-repeat: no-repeat;background-position: center center;background-size: cover;}
 .am-navigation {padding: 3vh 5vw;position: absolute;top: 0;width: 100%;z-index: 50;}
-.am-logo {height: 110px;width: 165px;background-image: url("../../img/logo-light.svg");background-repeat: no-repeat;margin-right: 5%;}
+.am-logo {height: 110px;width: 165px;background-image: url("/img/logo-light.svg");background-repeat: no-repeat;margin-right: 5%;}
 .am-header .bg-light {background-color: transparent !important;}
 
 .navbar-expand-lg .navbar-nav .nav-link {padding-right: 2vw; padding-left: 2vw;}

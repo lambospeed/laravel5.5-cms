@@ -34,8 +34,12 @@
 </head>
 <body>
 <div id="fullPage">
-
 <section class="vertical-scrolling">
+<div class="am-navigation tr-dark">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="am-logo" href="{{  route('root') }}"></a>
+  </nav>
+</div>
 @include('partials.application.contact')
 </section>
 </div>

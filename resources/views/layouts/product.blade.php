@@ -34,7 +34,7 @@
         @include('partials.application.top')
     </div>
     <h1 class="am-entry-1">Precise <span>real-time</span> scan </h1>
-    <div class="am-3d am-entry-3"><img src="img/augmenta-3d.png" alt=""></div>
+    <div class="am-3d am-entry-3"><img src="/img/augmenta-3d.png" alt=""></div>
     <div class="am-gonext"></div>
 </div>
 </section>
@@ -44,21 +44,21 @@
 <div class="row">
 <div class="col-md-12">
   <div class="am-manual-slider-container am-entry-1">
-    <div class="am-manual-slider-prev"><img src="img/arrow-left.png" alt=""></div>
-    <div class="am-manual-slider-next"><img src="img/arrow-right.png" alt=""></div>
+    <div class="am-manual-slider-prev"><img src="/img/arrow-left.png" alt=""></div>
+    <div class="am-manual-slider-next"><img src="/img/arrow-right.png" alt=""></div>
     <div class="am-manual-slider">
-      <div class="am-manual-item active" data-content="1"><p class="am-manual-step">.01</p><div class="am-manual-mask"><img src="img/instalation-icon.svg" alt=""></div><p class="am-manual-title">Installation</p></div>
-      <div class="am-manual-item" data-content="2"><p class="am-manual-step">.02</p><div class="am-manual-mask"><img src="img/system-icon.svg" alt=""></div><p class="am-manual-title">System Architecture</p></div>
-      <div class="am-manual-item" data-content="3"><p class="am-manual-step">.03</p><div class="am-manual-mask"><img src="img/abalysis-icon.svg" alt=""></div><p class="am-manual-title">Real time analysis</p></div>
-      <div class="am-manual-item" data-content="4"><p class="am-manual-step">.04</p><div class="am-manual-mask"><img src="img/control-icon.svg" alt=""></div><p class="am-manual-title">Real time control</p></div>
-      <div class="am-manual-item" data-content="5"><p class="am-manual-step">.05</p><div class="am-manual-mask"><img src="img/data-icon.svg" alt=""></div><p class="am-manual-title">Actionable Data</p></div>
+      <div class="am-manual-item active" data-content="1"><p class="am-manual-step">.01</p><div class="am-manual-mask"><img src="/img/instalation-icon.svg" alt=""></div><p class="am-manual-title">Installation</p></div>
+      <div class="am-manual-item" data-content="2"><p class="am-manual-step">.02</p><div class="am-manual-mask"><img src="/img/system-icon.svg" alt=""></div><p class="am-manual-title">System Architecture</p></div>
+      <div class="am-manual-item" data-content="3"><p class="am-manual-step">.03</p><div class="am-manual-mask"><img src="/img/abalysis-icon.svg" alt=""></div><p class="am-manual-title">Real time analysis</p></div>
+      <div class="am-manual-item" data-content="4"><p class="am-manual-step">.04</p><div class="am-manual-mask"><img src="/img/control-icon.svg" alt=""></div><p class="am-manual-title">Real time control</p></div>
+      <div class="am-manual-item" data-content="5"><p class="am-manual-step">.05</p><div class="am-manual-mask"><img src="/img/data-icon.svg" alt=""></div><p class="am-manual-title">Actionable Data</p></div>
     </div>
   </div>
   <div class="am-manual-container am-entry-2">
-    <div class="am-manual-content active" data-content="1">
+    <div class="am-manual-content visible" data-content="1">
       <div class="am-manual-title-mask"><h2>Plug n’ Play device, <span>isobus compatible</span></h2></div>
       <div class="am-manual-video">
-        <video autoplay muted loop style="height: 100%">
+        <video autoplay muted loop id="video1">
           <source src="/img/01_AUG.mp4" type="video/mp4">
         </video>
       </div>
@@ -67,8 +67,8 @@
     <div class="am-manual-content" data-content="2">
       <div class="am-manual-title-mask"><h2>100% automation from crop scanning <span>to fertilizer application and pesticide spraying </span></h2></div>
       <div class="am-manual-video">
-        <video autoplay muted loop style="height: 100%">
-          <source src="/img/01_AUG.mp4" type="video/mp4">
+        <video autoplay muted loop poster="/img/augmenta-illustration.png" id="video2">
+          <source src="/img/augmenta-illustration.png" type="video/mp4">
         </video>
       </div>
     </div>
@@ -76,7 +76,7 @@
     <div class="am-manual-content" data-content="3">
       <div class="am-manual-title-mask"><h2>Hyperspectral computer vision detects crop diseases and nutrient deficiencies <span>in real time </span></h2></div>
       <div class="am-manual-video">
-        <video autoplay muted loop style="height: 100%">
+        <video autoplay muted loop id="video3">
           <source src="/img/02_AUG.mp4" type="video/mp4">
         </video>
       </div>
@@ -85,7 +85,7 @@
     <div class="am-manual-content" data-content="4">
       <div class="am-manual-title-mask"><h2>Real-time dosage adjustment by <span>controlling spreader sliders and sprayer electrovalves</span></h2></div>
       <div class="am-manual-video">
-        <video autoplay muted loop style="height: 100%">
+        <video autoplay muted loop id="video4">
           <source src="/img/03_AUG.mp4" type="video/mp4">
         </video>
       </div>
@@ -94,7 +94,7 @@
     <div class="am-manual-content" data-content="5">
       <div class="am-manual-title-mask"><h2>Visual data analytics <span>in a private, secure platform</span></h2></div>
       <div class="am-manual-video">
-        <video autoplay muted loop style="height: 100%">
+        <video autoplay muted loop id="video5">
           <source src="/img/04_AUG.mp4" type="video/mp4">
         </video>
       </div>
@@ -116,7 +116,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <img class="am-entry-3" src="img/augmenta-bg.png" alt="">
+      <img class="am-entry-3" src="/img/augmenta-bg.png" alt="">
     </div>
   </div>
   </div>
@@ -130,6 +130,7 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@
                    <input class="inputMaterial" type="text" name="company" required>
                    <span class="highlight"></span>
                    <span class="bar"></span>
-                   <label>Company</label>
+                   <label>Company or Crop Type</label>
                  </div>
                </div>
                <div class="col-md-6">
