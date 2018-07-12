@@ -89,23 +89,30 @@ $("#am-cv-form").on( "submit", function( event ) {
 
 function verticalScroll() {
 
-  $('#fullPage').fullpage({
-    sectionSelector: '.vertical-scrolling',
-    navigation: true,
-    slidesNavigation: true,
-    scrollOverflow: true,
-    afterRender: function(){
-        if($('#video').length > 0){$('#video')[0].play();}
-    },
-    onLeave: function(){
-        if($('#video1').length > 0){$('#video1')[0].play();}
-        $('.am-manual-slider .am-manual-item.active').removeClass('active');
-        $('.am-manual-slider .am-manual-item:first-child').addClass('active');
-        $('.am-manual-container [data-content]').removeClass('visible');
-        $('.am-manual-container [data-content=1]').addClass('visible');
-    },
-    controlArrows: false
-});
+    $('#fullPage').fullpage({
+        sectionSelector: '.vertical-scrolling',
+        navigation: true,
+        slidesNavigation: true,
+        scrollOverflow: true,
+        afterRender: function(){
+            if($('#video').length > 0){$('#video')[0].play();}
+        },
+        onLeave: function(origin, destination, direction){
+
+            if(destination != 1) {
+            $(".am-go-top").addClass("active");
+            }else{
+            $(".am-go-top").removeClass("active");
+            }
+
+            if($('#video1').length > 0){$('#video1')[0].play();}
+            $('.am-manual-slider .am-manual-item.active').removeClass('active');
+            $('.am-manual-slider .am-manual-item:first-child').addClass('active');
+            $('.am-manual-container [data-content]').removeClass('visible');
+            $('.am-manual-container [data-content=1]').addClass('visible');
+        },
+        controlArrows: false
+    });
 
   }
 
@@ -114,6 +121,7 @@ function verticalScroll() {
 function entry() {
 
   window.onload = function () {
+      $('.preloader').fadeOut();
       $("body").addClass("am-play");
       if (screen && screen.width < 768) {$("body").addClass("active");}
 
@@ -125,6 +133,11 @@ function entry() {
 
 function events(){
 
+    $(".am-go-top").click(function() {
+        $.fn.fullpage.moveTo(1);
+        return false;
+    });
+      
 $('.am-manual-slider .am-manual-item').on('click', function () {
   $('.am-manual-slider .am-manual-item').removeClass('active');
   $(this).addClass('active');

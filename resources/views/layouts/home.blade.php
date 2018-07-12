@@ -26,8 +26,15 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Start of HubSpot Embed Code -->
+    <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4712866.js”></script>
+    <!-- End of HubSpot Embed Code -->
 </head>
 <body>
+<div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div> 
+<div class="preloader">
+  <div class="preloader-img"></div>
+</div>
 <div id="fullPage">
 <section class="vertical-scrolling">
 <div class="am-header">

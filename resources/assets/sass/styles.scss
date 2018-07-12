@@ -47,16 +47,22 @@ html { box-sizing: border-box; }
 html, body {
 	margin: 0;
 	padding: 0;
+	position: relative;
 	background-color: #fff;
 	font-family: 'SF Pro Display', tahoma;
 	font-weight: 300;
 	font-size: 18px;
 	color: #3c384b;
 }
-
+.preloader-img {position:absolute; left: 50%; top: 50%; z-index: 1; width: 64px;height: 64px;background-image: url('/img/icons/favicon-64x64.png');animation: spin 2s linear infinite;-webkit-animation: spin 2s linear infinite;}
+.preloader {position:absolute; left: 0; top: 0; width:100vw; height: 100vh;z-index: 1;background-color: white;}
 .br1 {border-right: 1px solid #e6e6e6;}
 .posr {position: relative;}
 .am-border-left-1px {position: absolute;right: 0;width: 1px;background-color: #e6e6e6;height: 50%;bottom: 0;}
+
+.am-go-top {background-color: #000;opacity: 0.5;position: absolute;left: 50px;bottom: -100px;color: #fff;font-size: 30px;line-height: 30px;width: 30px;height: 30px;z-index: 1000;cursor: pointer;border-radius: 50%;transition: all 300ms;}
+.am-go-top:hover {opacity: 0.8;}
+.am-go-top.active {transform: translateY(-150px);}
 
 /* BUTTONS */
 
@@ -830,6 +836,8 @@ animation-fill-mode: forwards;
 @keyframes c2 {0% {transform: scale(1);}50% {transform: scale(0.2);}100% {transform: scale(1);}}
 @-webkit-keyframes c3 {0% {transform: scale(1);}50% {transform: scale(0.1);}100% {transform: scale(1);}}
 @keyframes c3 {0% {transform: scale(1);}50% {transform: scale(0.1);}100% {transform: scale(1);}}
+@-webkit-keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+@keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
 
 /* END ANIMATIONS */
 
