@@ -28,6 +28,13 @@
     <!-- Start of HubSpot Embed Code -->
     <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4712866.js”></script>
     <!-- End of HubSpot Embed Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122162291-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122162291-1');
+    </script>
 </head>
 <body class="am-product-page">
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div> 
@@ -136,5 +143,6 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

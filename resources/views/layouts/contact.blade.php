@@ -29,6 +29,14 @@
     <!-- Start of HubSpot Embed Code -->
     <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4712866.js”></script>
     <!-- End of HubSpot Embed Code -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122162291-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122162291-1');
+    </script>
 </head>
 <body class="am-contact-page">
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div>  
@@ -127,6 +135,9 @@
                    <label>Message</label>
                  </div>
                </div>
+               <div class="col-md-12">
+                <div class="g-recaptcha" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
+               </div>
                <div class="col-md-12 text-center">
                  <button class="am-transp-button" id="buttonGet" type="submit">send message <i class="far fa-arrow-alt-circle-right"></i></button>
                </div>
@@ -155,5 +166,6 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

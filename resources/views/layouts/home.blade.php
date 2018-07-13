@@ -29,6 +29,13 @@
     <!-- Start of HubSpot Embed Code -->
     <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4712866.js”></script>
     <!-- End of HubSpot Embed Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122162291-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122162291-1');
+    </script>
 </head>
 <body>
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div> 
@@ -81,7 +88,7 @@
 <div class="am-scan">
   <div class="am-scaner"><div class="am-scaner-circle"><img src="/img/arrows.png" alt=""></div></div>
   <div class="am-scan-2 fertilizer"></div>
-  <div class="am-scan-1 fertilizer" style="clip: rect(auto, 68vw, auto, auto);"></div>
+  <div class="am-scan-1 fertilizer" style="clip: rect(auto, 50vw, auto, auto);"></div>
   <div class="am-scan-title-container">
     <h2 class="am-entry-1">How augmenta’s field analyser sees plants</h2>
     <div class="am-scan-buttons">
@@ -200,5 +207,6 @@
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1.12.9'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
