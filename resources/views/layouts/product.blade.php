@@ -37,6 +37,7 @@
     </script>
 </head>
 <body class="am-product-page">
+<div class="am-go-tester tr-dark"><a href="{{ route('tester.show') }}" class="am-white-button" id="beta_tester">Become a beta tester</a></div> 
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div> 
 <div id="fullPage">
 <section class="vertical-scrolling">

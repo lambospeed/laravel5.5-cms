@@ -38,6 +38,7 @@
     </script>
 </head>
 <body class="am-company-page">
+<div class="am-go-tester tr-dark"><a href="{{ route('tester.show') }}" class="am-white-button" id="beta_tester">Become a beta tester</a></div> 
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div> 
 <div id="fullPage">
 <section class="vertical-scrolling">
@@ -109,8 +110,11 @@
     <div class="am-team-avatars bottom am-entry-2">
     <div class="am-t-1"><img src="/img/Untitled-7.png" alt=""><div class="am-team-descr"><p>Kostas Karakasiliotis</p><p><span>Industrial Designer - Mechanics</span></p></div></div>
     <div class="am-t-2"><img src="/img/Untitled-8.png" alt=""><div class="am-team-descr"><p>Pavlos Stavrou</p><p><span>System Level Developer</span></p></div></div>
-    <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Konstantinos Moustinas</p><p><span>Brand/Marketing Manager</span></p></div></div>
+    <div class="am-t-3"><img src="" alt=""><div class="am-team-descr"><p>Konstantinos Moustinas</p><p><span>Brand/Marketing Manager</span></p></div></div>
     <!-- <div class="am-t-3"><img src="/img/Untitled-3.png" alt=""><div class="am-team-descr"><p>Areti Bilal0</p><p><span>Operations Analyst</span></p></div></div> -->
+    </div>
+    <div class="am-team-avatars bottom am-entry-2">
+    <div class="am-t-1"><img src="" alt=""><div class="am-team-descr"><p>Areti Bilal0</p><p><span>Operations Analyst</span></p></div></div>
     </div>
     <div class="am-team-border am-entry-4"><div class="am-border-circle"><img src="img/logo-gray.svg" alt=""></div></div>
   </div>
@@ -123,9 +127,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12"><h2 class="am-entry-1">join our team</h2></div>
-    <div class="col-md-6 am-jobs-1 am-entry-2"><p>We are a <span>rapidly growing</span> hardware startup. If you are <strong>passionate</strong> about deep learning models and wish to have an impact on farmers’ lives and global food production, send us your information.</p><strong>can’t find a position that suits you?</strong><a href="contact.html" class="am-white-button">GET IN TOUCH  <i class="far fa-arrow-alt-circle-right"></i></a></div>
+    <div class="col-md-6 am-jobs-1 am-entry-2"><p>We are a <span>rapidly growing</span> hardware startup. If you are <strong>passionate</strong> about deep learning models and wish to have an impact on farmers’ lives and global food production, send us your information.</p><strong>can’t find a position that suits you?</strong><a href="{{ route('contact') }}" class="am-white-button">GET IN TOUCH  <i class="far fa-arrow-alt-circle-right"></i></a></div>
     <div class="col-md-6 am-jobs-2 am-entry-3">
-      <form id="am-cv-form" class="am-cv-form" action="form-process.php" method="POST">
+      <form id="am-cv-form" class="am-cv-form" action="{{ route('join.store') }}" method="POST">
+      {{ csrf_field() }}
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -153,7 +158,7 @@
             </div>
             </div>
             <div class="col-md-12">
-              <div class="g-recaptcha" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
+              <div class="g-recaptcha d-flex justify-content-center mb-4" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
             </div>
             <div class="col-md-12 am-files">
 

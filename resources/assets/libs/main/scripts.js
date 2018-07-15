@@ -54,36 +54,36 @@ function buildList (label, fname) {
 })
 }
 
-$("#am-cv-form").on( "submit", function( event ) {
+// $("#am-cv-form").on( "submit", function( event ) {
 
-  var form = $(this);
-	event.preventDefault();
+//   var form = $(this);
+// 	event.preventDefault();
 
-  var formData = new FormData();
+//   var formData = new FormData();
 
-  formData.append('name', form.find("input[name='name']").val());
-  formData.append('surname', form.find("input[name='surname']").val());
-  formData.append('email', form.find("textarea[name='email']").val());
+//   formData.append('name', form.find("input[name='name']").val());
+//   formData.append('surname', form.find("input[name='surname']").val());
+//   formData.append('email', form.find("textarea[name='email']").val());
 
-  validatedFiles.forEach(function (file, key) {
- 		 formData.append('files[]', file, file.name);
-	});
+//   validatedFiles.forEach(function (file, key) {
+//  		 formData.append('files[]', file, file.name);
+// 	});
 
-  if (grecaptcha.getResponse() != ""){
-    $.ajax({
-       url : form.attr('action'),
-       type : 'POST',
-       data : formData,
-       processData: false,
-       contentType: false,
-       success : function(data) {
-         form.slideUp(()=> {
-             $('.am-jobs .am-form-thankyou').slideDown();
-         });
-       }
-  });    
-  }
-})
+//   if (grecaptcha.getResponse() != ""){
+//     $.ajax({
+//        url : form.attr('action'),
+//        type : 'POST',
+//        data : formData,
+//        processData: false,
+//        contentType: false,
+//        success : function(data) {
+//          form.slideUp(()=> {
+//              $('.am-jobs .am-form-thankyou').slideDown();
+//          });
+//        }
+//   });    
+//   }
+// })
 
 }
 
@@ -100,9 +100,11 @@ function verticalScroll() {
         onLeave: function(origin, destination, direction){
 
             if(destination != 1) {
-            $(".am-go-top").addClass("active");
+              $(".am-go-top").addClass("active");
+              $(".am-go-tester").addClass("active");
             }else{
             $(".am-go-top").removeClass("active");
+            $(".am-go-tester").removeClass("active");
             }
 
             if($('#video1').length > 0){$('#video1')[0].play();}

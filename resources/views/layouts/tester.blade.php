@@ -37,7 +37,7 @@
 <section class="vertical-scrolling">
 <div class="am-navigation tr-dark">
   <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="am-logo" href="{{  route('root') }}"></a>
+    <a href="{{ URL::previous() }}" class="am-transp-button back" id="beta_tester"><i class="far fa-arrow-alt-circle-left"></i>Go Back</a>
   </nav>
 </div>
 @include('partials.application.contact')

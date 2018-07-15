@@ -64,6 +64,9 @@ html, body {
 .am-go-top:hover {opacity: 0.8;}
 .am-go-top.active {transform: translateY(-150px);}
 
+.am-go-tester {position: absolute;right: 3vw;top: -100px;z-index: 1000;cursor: pointer;transition: all 300ms;}
+.am-go-tester.active {transform: translateY(120px);}
+
 /* BUTTONS */
 
 .am-green-button, .am-green-button:link {display: inline-block;padding: 0 30px;line-height: 40px;font-family: 'DIN Pro', tahoma;color: #fff;text-decoration: none;letter-spacing: 1px;text-transform: uppercase;font-weight: 700;background-color: #49b04b;border: 2px solid #49b04b;border-radius: 25px;transition: all 300ms;}
@@ -76,6 +79,8 @@ html, body {
 .am-transp-button, .am-transp-button:link {display: inline-block;padding: 0 30px;padding-right: 20px;line-height: 40px;font-family: 'DIN Pro', tahoma;cursor: pointer;color: #000000;text-decoration: none;letter-spacing: 1px;text-transform: uppercase;font-weight: 700;background-color: transparent;border: 2px solid #000;border-radius: 25px;transition: all 300ms;}
 .am-transp-button:hover {background-color: #49b04b;color: #fff;border-color: #49b04b;text-decoration: none;}
 .am-transp-button .fa-arrow-alt-circle-right {margin-left: 10px;font-size: 1rem;transform: translateY(1px);}
+.am-transp-button .fa-arrow-alt-circle-left {margin-right: 10px;font-size: 1rem;transform: translateY(1px);}
+.am-transp-button.back {padding-left: 20px;}
 .am-transp-button .fa-chevron-circle-down {margin-left: 10px;font-size: 0.9rem;transform: translateY(1px);}
 
 .am-transp-white-button, .am-transp-white-button:link {display: inline-block;padding: 0 30px;line-height: 40px;font-family: 'DIN Pro', tahoma;color: #fff;text-decoration: none;letter-spacing: 1px;text-transform: uppercase;font-weight: 700;background-color: transparent;border: 2px solid #fff;border-radius: 25px;transition: all 300ms;}
@@ -433,7 +438,7 @@ background-color: #49b04b;color: #fff;border-color: #49b04b;text-decoration: non
 .am-charts-item.active p {transform: translateY(-20px);color: #000;}
 
 .am-charts-offers {position: relative;padding: 5vh 3vw;}
-.am-charts-offers h3 {font-family: 'DIN Pro', tahoma;font-size: 2vw;color: #b2b2b2;font-weight: 500;text-transform: uppercase;}
+.am-charts-offers h3 {font-family: 'DIN Pro', tahoma;font-size: 2vw;color: #b2b2b2;font-weight: 500;text-transform: uppercase;padding-top: 40px;}
 .am-charts-offers-menu {position: absolute;display: flex;justify-content: space-between;padding: 0 3vw;width: 100%;left: 0;bottom: 5vh;font-family: 'DIN Pro', tahoma;font-size: 0.9rem;font-weight: 700;color: #49b04b;text-transform: uppercase;}
 .am-charts-offers-menu .am-link {position: relative;display: block;cursor: pointer;color:#c6c6c6;transition: all 300ms;}
 .am-charts-offers-menu .am-link:hover {color: #49b04b;}
@@ -612,13 +617,13 @@ background-color: #49b04b;color: #fff;border-color: #49b04b;text-decoration: non
 .am-contact-page .am-contact {background-image: url("/img/contact-bg.jpg");background-repeat: no-repeat;background-position: center center;background-size: cover;}
 .am-contact-page .am-contact h3, .am-company-page .am-contact h3 {color: #fff;}
 .am-contact-page .inputMaterial, .am-company-page .inputMaterial {background-color: transparent;color: #fff;}
-.am-contact-page .am-transp-button, .am-company-page .am-transp-button {background-color: #60c448;color: #fff;border-color: #60c448;}
-.am-contact-page .am-transp-button:hover, .am-company-page .am-transp-button:hover {background-color: transparent;}
+.am-contact-page .am-transp-button, .am-jobs .am-transp-button {background-color: #60c448;color: #fff;border-color: #60c448;}
+.am-contact-page .am-transp-button:hover, .am-jobs .am-transp-button:hover {background-color: transparent;}
 .am-contact-page .form-thankyou span, .am-company-page .form-thankyou span {color: #868686;}
 
 .inputMaterial {
   font-size: 1.3rem;
-  color: #000;
+  color: transparent;
   padding: 10px 10px 10px 0px;
   display: block;
   width: 100%;
@@ -643,6 +648,14 @@ label {
   -webkit-transition: 0.2s ease all;
 }
 
+.inputMaterial:-webkit-autofill {
+-webkit-text-fill-color: #000 !important;
+background-color: transparent !important;
+-webkit-box-shadow: 0 0 0px 0 inset;
+transition: background-color 5000s ease-in-out 0s;
+}
+.inputMaterial:focus, .inputMaterial:valid {color: #000;}
+	
 .inputMaterial:focus ~ label,
 .inputMaterial:valid ~ label,
 .has-error .inputMaterial:invalid ~ label {
@@ -737,7 +750,7 @@ label {
 
 .am-footer .inputMaterial {
   font-size: 1rem;
-  color: #fff;
+  color: transparent;
 	font-family: 'SF Pro Display', tahoma;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -747,6 +760,15 @@ label {
 	margin-bottom: 0;
 }
 
+.am-footer .inputMaterial:-webkit-autofill {
+	-webkit-text-fill-color: #fff !important;
+	background-color: transparent !important;
+	-webkit-box-shadow: 0 0 0px 0 inset;
+	transition: background-color 5000s ease-in-out 0s;
+	}
+.am-footer .bar {display: none;}
+.am-footer .inputMaterial:focus, .am-footer .inputMaterial:valid {color: #fff;}
+	
 .am-footer label {
   color: #fff;
   font-size: 1rem;
@@ -937,6 +959,7 @@ html, body {font-size: 16px;}
 }
 
 @media screen and (max-width: 991px){
+.am-go-tester {display: none;}
 .am-charts .am-3d {width: 70%;}
 .am-product-page .am-header {padding-top: 30vh;}
 .am-product-page .am-3d {width: 80%;top: 300px;bottom: auto}

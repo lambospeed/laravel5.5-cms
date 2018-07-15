@@ -59,7 +59,7 @@
                  </div>
                </div>
                <div class="col-md-12">
-                <div class="g-recaptcha" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
+                <div class="g-recaptcha d-flex justify-content-center mb-4" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
                </div>
                <div class="col-md-12 text-center">
                  <button class="am-transp-button" id="buttonGet" type="submit">send message <i class="far fa-arrow-alt-circle-right"></i></button>

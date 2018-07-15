@@ -2,7 +2,7 @@
 
 return [
 
-    'email' => 'info@augmenta.ag',
+    'email' => 'lambospeed129@gmail.com',
     'name' => 'Augmenta Agriculture',
 
 ];

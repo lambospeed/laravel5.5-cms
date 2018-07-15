@@ -39,6 +39,7 @@
     </script>
 </head>
 <body class="am-contact-page">
+<div class="am-go-tester tr-dark"><a href="{{ route('tester.show') }}" class="am-white-button" id="beta_tester">Become a beta tester</a></div> 
 <div class="am-go-top"><i class="fas fa-chevron-circle-up"></i></div>  
 <div id="fullPage">
 <section class="vertical-scrolling">
@@ -136,7 +137,7 @@
                  </div>
                </div>
                <div class="col-md-12">
-                <div class="g-recaptcha" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
+                <div class="g-recaptcha d-flex justify-content-center mb-4" data-sitekey="6Ldo22MUAAAAAKpw9RfqM3dystMkRKvy_kngnM04"></div>
                </div>
                <div class="col-md-12 text-center">
                  <button class="am-transp-button" id="buttonGet" type="submit">send message <i class="far fa-arrow-alt-circle-right"></i></button>
